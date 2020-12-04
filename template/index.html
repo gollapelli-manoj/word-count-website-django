@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Home 
+{% endblock title %}
+
+{% block body %}
+    <form action='{% url 'count'%}'>
+        <div class="form-group my-4 container">
+            <label for="userin"><b>Type / paste your text here:</b> </label>
+             <textarea class="form-control" rows="5" id="userin" name='fulltext'></textarea>
+             <input value='Count' name='submit' class=' mt-3 btn btn-outline-dark' type='submit' />
+        </div>
+    </form>
+{% endblock body %}

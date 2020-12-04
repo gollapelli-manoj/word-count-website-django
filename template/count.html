@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Count
+{% endblock title %}
+
+{% block body %}
+<div class='container'>
+<hr>
+<p class='display-4 font-weight-bold text-danger'>Hey You entered : {{len}} Cool {{words}} </p>
+
+<a href='home'onclick='alert("Note that Previous entered text will be erased");' class='text-center display-block m-4 btn btn-outline-dark'>Use Again</a>
+</div>
+{% endblock body %}
