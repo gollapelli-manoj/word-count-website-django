@@ -8,7 +8,7 @@ def count(request):
     fulltext=request.GET['fulltext']
     split=fulltext.split()
     splitlen=len(split)
-    if(splitlen==1):
+    if(splitlen==1 or splitlen==0):
         words='Word'
     else:
         words='Words'
